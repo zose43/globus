@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адрес доставки</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="container">
+        <div class="hideWindow">
+          <div class="hideWindow-header">Укажите адрес доставки</div>
+          <hr />
+          <div class="tumbler">
+            <div class="tumbler-descr">Использовать ранее указанный адрес</div>
+            <div class="onoffswitch">
+              <input
+                form=""
+                type="checkbox"
+                name="onoffswitch"
+                class="onoffswitch-checkbox"
+                id="myonoffswitch"
+                tabindex="0"
+                checked
+              />
+              <label class="onoffswitch-label" for="myonoffswitch"></label>
+            </div>
+          </div>
+          <div class="hideWindow-close">&times;</div>
+          <div class="content">
+            <div class="repeat">
+              <select
+                class="repeatAddress"
+                name="repeatAddress"
+                id="addressForm"
+              >
+                <option>Выберите адрес</option>
+                <option>некий адрес1 </option>
+                <option>некий адрес2</option>
+                <option>некий адрес3</option>
+              </select>
+            </div>
+            <form class="form" action="#" id="addressForm">
+              <select name="city">
+                <option>Киров</option>
+                <option>Нововятск </option>
+                <option>пос. Коминтерн</option>
+                <option>д. Гнусино</option>
+                <option>пос. Дороничи</option>
+                <option>г. Слободской</option>
+                <option>пос. Вахруши</option>
+                <option>пос. Сидоровка</option>
+                <option>пгт. Радужный</option>
+                <option>г. Кирово-Чепецк</option>
+                <option>пос. Макарье</option>
+                <option>пос. Костино</option>
+                <option>пос. Лянгасово</option>
+                <option>д.Малая/Большая Субботиха</option>
+                <option>пос. Порошино</option>
+                <option>Аэропорт Победилово</option>
+                <option>с. Митино</option>
+                <option>д. Шубино</option>
+                <option>д. Большая Гора</option>
+                <option>д. Трушковы</option>
+                <option>п. Ганино</option>
+              </select>
+              <input required type="text" name="address" placeholder="Улица" />
+              <input
+                required
+                type="text"
+                name="house"
+                placeholder="Номер дома и корпуса"
+              />
+              <input required type="text" name="porch" placeholder="Подъезд" />
+              <input required type="text" name="floor" placeholder="Этаж" />
+              <input
+                required
+                type="text"
+                name="flat"
+                placeholder="Номер квартиры"
+              />
+              <textarea
+                name="comment"
+                id=""
+                cols="39"
+                rows="3"
+                placeholder="Комментарий"
+              ></textarea>
+            </form>
+            <div class="list">
+              <div class="divider"></div>
+              <span>Стоимость доставки:</span> <br />
+              Киров - 110,00 руб.<br />
+              Нововятск - 180,00 руб.<br />
+              пос. Коминтерн - 180,00 руб.<br />
+              д. Гнусино - 180,00 руб.<br />
+              пос. Дороничи - 180,00 руб.<br />
+              г. Слободской - 600,00 руб.<br />
+              пос. Вахруши - 500,00 руб. <br />
+              пос. Сидоровка - 350,00 руб. <br />
+              пгт. Радужный - 180,00 руб.<br />
+              г. Кирово-Чепецк - 600,00 руб.<br />
+              пос. Макарье - 180,00 руб. <br />
+              пос. Костино - 180,00 руб.<br />
+              пос. Лянгасово - 180,00 руб.<br />
+              д. Малая/Большая Субботиха - 180,00 руб.<br />
+              пос. Порошино - 180,00 руб.<br />
+              Аэропорт Победилово - 290,00 руб.<br />
+              с. Митино - 350,00 руб. <br />
+              д. Шубино - 180,00 руб.<br />
+              д. Большая Гора - 180,00 руб.<br />
+              д. Трушковы - 290,00 руб.<br />
+              п. Ганино - 110,00 руб.
+            </div>
+          </div>
+          <input
+            form="address"
+            class="submit"
+            type="submit"
+            value="Подтвердить"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jQuery.js"></script>
+  <script src="js/script.js"></script>
+</html>
